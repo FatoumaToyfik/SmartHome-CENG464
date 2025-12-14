@@ -6,9 +6,9 @@
 
 class DeviceFactory {
 public:
-    // type: 'L' Light, 'C' Camera, 'T' TV
     static Device* createDevice(char type, const std::string& name);
 };
 
 #endif
+
 
