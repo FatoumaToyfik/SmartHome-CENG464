@@ -6,7 +6,9 @@
 
 class DeviceFactory {
 public:
-    static Device* createDevice(char type, const std::string& name);
+    // type: L=Light, C=Camera, T=TV
+    // brand: only used when type=='T' (S=Samsung, G=LG)
+    static Device* createDevice(char type, char brand, const std::string& name);
 };
 
 #endif
